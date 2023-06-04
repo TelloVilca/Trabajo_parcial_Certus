@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- PRIMERA PAGINA -->
+    <main class="menu">
+
+        <!-- FORMULARIO CONTENIDO -->
+        <form class="form" method="get">
+            <div class="contenedor">
+
+                <!-- TITULO FORMULARIO -->
+                <h1>Crear Cuenta</h1>
+
+                <!-- CONTENIDO NOMBRE -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" required>
+
+                <!-- CONTENIDO APELLIDOS -->
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" required>
+
+                <!-- CONTENIDO CORREO -->
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" required>
+
+                <!-- CONTENIDO CELULAR -->
+                <label for="celular">Telefono:</label>
+                <input type="number" id="name" required>
+
+
+                <!-- CONTENIDO CONTRASEÑA -->
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" required>
+
+                <!-- CONTENIDO GENEROS -->
+                <label>Genero de Sexo:</label>
+                <div class="generos">
+                    <input  class="g_r" type="radio" name="genero" id="masculino" value="masculino">
+                    <label for="masculino" style="display: inline;">Masculino</label>
+                    <br>
+                    <input class="g_r" type="radio" name="genero" id="femenino" value="femenino">
+                    <label for="femenino" style="display: inline;">Femenino</label> 
+                </div>
+                <br>
+
+                <!-- CONTENIDO ENVIO -->
+                <input type="submit" value="Iniciar Session" >
+            </div>
+        </form>   
+    </main>
+</body>
+</html>

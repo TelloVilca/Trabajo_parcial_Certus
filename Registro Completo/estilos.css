@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(210, 174, 131);
+}
+
+
+/* *PRIMERA PAGINA DEL CONTENIDO */
+
+.form{
+    padding-top: 50px;
+}
+
+/* * CONTENIDO FORMULARIO  */
+.contenedor{
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 50px;
+    border: 2px solid black;
+    width: 400px;
+    margin: auto;
+    padding: 30px;
+    font-weight: bold;
+    
+}
+
+/* *CONTENIDO TITULO */
+.contenedor h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contenedor label{
+    display: block;
+    padding: 10px 0;
+    font-size: 1.3em;
+}
+
+/* *CONTENIDO INPUT  */
+.contenedor input{
+    padding: 10px;
+    width: 340px;
+    border-radius: 10px;
+}
+
+/* *CONTENIDO INPUT TIPO SUBMIT */
+.contenedor input[type="submit"]{
+    margin: 5px auto 0px;
+    display: block;
+    width: 140px;
+    font-size: 1.1em;
+}
+
+.contenedor input[type="submit"]:hover{
+    background-color: gray;
+    color: wheat;
+    border: 2px solid gray;
+}
+
+/* *CONTENIDO INPUT TIPO RADIO */
+.contenedor input[type="radio"]{
+    width: 30px;
+}
