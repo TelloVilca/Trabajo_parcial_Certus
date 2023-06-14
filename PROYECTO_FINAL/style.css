@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(imagenes_contenido/Fondo_2.jpg);
+  background-size: cover;
+  color: #352640;
+}
+
+/* *ENCABESADO PRINCIPAL */
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+/* *LOGOTIPO DE LA MARCA */
+.logo {
+  width: 20%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 170px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* *LISTA DE ITEMS */
+.listado {
+  width: 40%;
+  font-weight: bolder;
+}
+
+.listado ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0 80px 40px 0px;
+  font-size: 1em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.listado li {
+  padding: 40px 15px;
+}
+
+.listado a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 30px 0;
+}
+
+.listado a:hover {
+  color: #009989;
+  transition: 0.5s;
+}
+
+.listado i {
+  font-size: 40px;
+}
+
+/* *REGISTRO DE SECCION */
+
+.enlaces_registros {
+  width: 30%;
+}
+
+.enlaces_registros ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 35px;
+  list-style: none;
+  font-size: 1.1em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.enlaces_registros li {
+  padding: 4px 10px;
+  font-weight: bolder;
+}
+
+.enlaces_registros a {
+  text-decoration: none;
+  background-color: #1b8798;
+  border-radius: 20px;
+  padding: 20px 30px;
+  color: whitesmoke;
+}
+
+.enlaces_registros a:hover {
+  background-color: #c6b299;
+  color: #785d56;
+  transition: 0.7s;
+}
+
+/* *CARRITO DE COMPRAS */
+
+.compra {
+  width: 10%;
+}
+
+.compra i {
+  font-size: 40px;
+}
+
+.compra a {
+  text-decoration: none;
+  color: whitesmoke;
+  display: block;
+  padding: 30px 40px;
+}
+
+.compra a:hover {
+  color: #009989;
+  transition: 0.5s;
+}
+
+.icono_carro i {
+  font-size: 17px;
+}
+
+/* *FINAL DEL ENCABESADO */
+
+/* *BOOTSTRAP */
+.content {
+  padding-top: 50px;
+}
+
+.content_center {
+  border: 3px solid black;
+  border-radius: 30px;
+  margin: 10px auto;
+  background-color: #d1b4a2;
+}
+
+.txt_size {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* *TITULO DE PRODUCTOS */
+.titulo {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 3em;
+  color: #fea304;
+}
+
+/* *CAJA GENERAL DE CONTENIDO PRODUCTOS */
+.fila {
+  margin: 0px 100px;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+}
+
+#articulo {
+  width: 23%;
+  display: inline-block;
+  min-width: 200px;
+}
+
+.items {
+  margin: 20px 20px;
+  background-color: #e7d84b;
+}
+
+.items:hover {
+  background-color: #f1f2ce;
+}
+
+.items img {
+  width: 100%;
+}
+
+/* *DESCRIPCION DE TEXTO PRODUCTOS */
+.descripcion {
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.descripcion p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #433d3d;
+}
+
+.descripcion .precio_normal {
+  color: black;
+  text-decoration: line-through;
+}
+
+.descripcion .porcentaje_descuento {
+  color: red;
+  font-weight: bold;
+  background-color: rgb(234, 96, 96);
+  border-radius: 15%;
+}
+
+.descripcion .precio_descuento {
+  color: rgb(24, 23, 23);
+  font-weight: bold;
+}
+
+/* *ENLACE DE PRODUCTO */
+.items a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.items button {
+  background-color: black;
+  display: block;
+  text-decoration: none;
+  margin-top: 20px;
+  color: wheat;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  padding: 6px;
+  border: none;
+}
+
+.items button:hover {
+  background-color: #ffbf59;
+  color: black;
+}
+
+/* *PIE DE PAGINA  */
+.footer {
+  background-color: black;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.footer p {
+  background-color: bisque;
+  margin: auto;
+  border-radius: 60%;
+  padding: 20px;
+  width: 35%;
+}

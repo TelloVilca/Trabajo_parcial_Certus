@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header container-fluid">
+      <div class="logo">
+        <a href="inicio_sesion.html">
+          <img src="imagenes_contenido/Logo de empresa.jpg" alt="logo" />
+        </a>
+      </div>
+
+      <nav class="listado">
+        <ul>
+          <li><a href="#primera_fila">INICIO</a></li>
+          <li><a href="#segunda_fila">CENTRO</a></li>
+          <li><a href="#tercera_fila">FINAL</a></li>
+        </ul>
+      </nav>
+      <nav class="enlaces_registros">
+        <ul>
+          <li><a href="inicio_sesion.html">INICIAR SECCION</a></li>
+          <li><a href="registro.html">REGISTRATE</a></li>
+        </ul>
+      </nav>
+
+      <div class="compra">
+        <a href="#">
+          <i
+            class="material-icons"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            >shopping_cart</i
+          >
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    COMPRA DE PRODUCTOS
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="modal-body">
+                  <div id="carrito">
+                    <img
+                      id="carritoVacio"
+                      src="imagenes_contenido/Imagen_compras.jpg"
+                      class="img-fluid mx-auto d-block"
+                      alt="carro_vacio"
+                    />
+                    <figcaption class="text-center mt-3">
+                      Actualmente no cuenta con ningun producto.
+                    </figcaption>
+                  </div>
+                </div>
+                <div class="modal-footer icono_carro">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    <i class="material-icons icono_compra">remove_shopping_cart</i>
+                    <span class="carro_compras">Regresar</span>
+                  </button>
+                  <button type="button" class="btn btn-primary">Cotizar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <!-- INICIO DE CONTENIDO PRODUCTOS-->
+    <h1 class="titulo" id="productos">Productos</h1>
+    <div class="fila">
+      <!-- PRODUCTO 1 -->
+      <article id="articulo">
+        <div class="items" id="primera_fila">
+          <img src="imagenes/Laptop hp.jpg" alt="" />
+          <div class="descripcion">
+            <p>LAPTOP HP 15-DY2059LA INTEL CORE I3 8GB RAM 256GB SSD 15.6''</p>
+            <span class="precio_normal">Precio anterior: S/2099</span>
+            <br />
+            <span class="porcentaje_descuento">-50%</span>
+            <br />
+            <span class="precio_descuento"> Precio ahora: S/1750</span>
+          </div>
+          <button>
+            <a href="#">Añadir al carrito</a>
+          </button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 2 -->
+      <article id="articulo">
+        <div class="items">
+          <img src="imagenes/Laptop Asus corei5.jpg" alt="" />
+          <div class="descripcion">
+            <p>
+              LAPTOP ASUS X515 X515EA-EJ921W INTEL CORE I5 1135G7 8GB RAM 512GB
+            </p>
+            <span class="precio_normal">Precio anterior: S/3299</span>
+            <br />
+            <span class="porcentaje_descuento">-10%</span>
+            <br />
+            <span class="precio_descuento"> Precio ahora: S/2999</span>
+          </div>
+          <button><a href="#encabesado">Añadir al carrito</a></button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 3 -->
+      <article id="articulo">
+        <div class="items">
+          <img src="imagenes/Laptop HP ryzen 5.jpg" alt="" />
+          <div class="descripcion">
+            <p>LAPTOP HP 15-EF2501LA AMD RYZEN 5 16GB RAM 512GB SSD 15.6''</p>
+            <span class="precio_normal">Precio anterior: S/2699</span>
+            <br />
+            <span class="porcentaje_descuento">-19%</span>
+            <br />
+            <span class="precio_descuento"> Precio ahora: S/2199</span>
+          </div>
+          <button><a href="#encabesado">Añadir al carrito</a></button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 4 -->
+      <article id="articulo">
+        <div class="items">
+          <img src="imagenes/Laptop ACER Core i5.jpg" alt="" />
+          <div class="descripcion">
+            <p>
+              LAPTOP ACER ASPIRE 5 CORE I5 1135G7 8GB 512GB SSD 14" W11 OCTAVA
+              GENERACION
+            </p>
+            <span class="precio_normal">Precio anterior: S/2899</span>
+            <br />
+            <span class="porcentaje_descuento">-41%</span>
+            <br />
+            <span class="precio_descuento"> Precio ahora: S/1699</span>
+          </div>
+          <button><a href="#encabesado">Añadir al carrito</a></button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 5 -->
+      <article id="articulo">
+        <div class="items" id="segunda_fila">
+          <img src="imagenes/Laptop Lenovo Corei3.jpg" alt="" />
+          <div class="descripcion">
+            <p>LAPTOP LENOVO IDEAPAD 3I INTEL CORE I3 8GB 256 GB SSD 15.6"</p>
+            <span class="precio_normal">Precio anterior: S/2299</span>
+            <br />
+            <span class="porcentaje_descuento">-10%</span>
+            <br />
+            <span class="precio_descuento"> Precio ahora: S/1950</span>
+          </div>
+          <button><a href="#encabesado">Añadir al carrito</a></button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 6 -->
+      <article id="articulo">
+        <div class="items">
+          <img src="imagenes/Laptop HP Core i3.jpg" alt="" />
+          <div class="descripcion">
+            <p>LAPTOP HP 14-DQ2510LA INTEL CORE I3 8GB RAM 512GB SSD 14''</p>
+            <span class="precio_normal">Precio anterior: S/2199</span>
+            <br />
+            <span class="porcentaje_descuento">-20%</span>
+            <br />
+            <span class="precio_descuento"> Precio ahora: S/1870</span>
+          </div>
+          <button><a href="#encabesado">Añadir al carrito</a></button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 7 -->
+      <article id="articulo">
+        <div class="items">
+          <img src="imagenes/Laptop ACER Gamer core i5.jpg" alt="" />
+          <div class="descripcion">
+            <p>
+              LAPTOP ACER NITRO 5 INTEL CORE I5 8GB RAM 512GB SSD 15.6'' FHD IPS
+              144HZ GTX 1650
+            </p>
+            <span class="precio_normal">Precio anterior: S/4559</span>
+            <br />
+            <span class="porcentaje_descuento">-43%</span>
+            <br />
+            <span class="precio_descuento"> Precio ahora: S/2599</span>
+          </div>
+          <button><a href="#encabesado">Añadir al carrito</a></button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 8 -->
+      <article id="articulo">
+        <div class="items">
+          <img src="imagenes/Laptop ASUS TUF.jpg" alt="" />
+          <div class="descripcion">
+            <p>
+              LAPTOP ASUS TUF DASH F15 FX517ZM-HN001W INTEL CORE I7 12VA GEN
+              16GB SSD 15.6"
+            </p>
+            <span class="precio_normal">Precio anterior: S/7499</span>
+            <br />
+            <span class="porcentaje_descuento">-19%</span>
+            <br />
+            <span class="precio_descuento"> Precio ahora: S/6099</span>
+          </div>
+          <button><a href="#encabesado">Añadir al carrito</a></button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 9 -->
+      <article id="articulo">
+        <div class="items" id="tercera_fila">
+          <img src="imagenes/Laptop Victus COre i5.jpg" alt="" />
+          <div class="descripcion">
+            <p>LAPTOP VICTUS 16-D0506LA INTEL CORE I5 8GB 512GB SSD 16.1"</p>
+            <span class="precio_normal">Precio anterior: S/3059</span>
+            <br />
+            <span class="porcentaje_descuento">-20%</span>
+            <br />
+            <span class="precio_descuento"> Precio ahora: S/2550</span>
+          </div>
+          <button><a href="#encabesado">Añadir al carrito</a></button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 10 -->
+      <article id="articulo">
+        <div class="items">
+          <img src="imagenes/Latop ASUS Gamer Core i5.jpg" alt="" />
+          <div class="descripcion">
+            <p>
+              LAPTOP GAMER ASUS TUF F1 FX506LHB-HN323UW INTEL CORE I5 10300H
+              512GB''
+            </p>
+            <span class="precio_normal">Precio anterior: S/4000</span>
+            <br />
+            <span class="porcentaje_descuento">-30%</span>
+            <br />
+            <span class="precio_descuento"> Precio ahora: S/3750</span>
+          </div>
+          <button><a href="#encabesado">Añadir al carrito</a></button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 11 -->
+      <article id="articulo">
+        <div class="items">
+          <img src="imagenes/Laptop ASUS ryzen 5.jpg" alt="" />
+          <div class="descripcion">
+            <p>
+              ASUS VIVOBOOK GO 15 E1504FA-L1112W AMD RYZEN 5 7520U 8GB RAM
+              512GBSSD 15.6"
+            </p>
+            <span class="precio_normal">Precio anterior: S/3099</span>
+            <br />
+            <span class="porcentaje_descuento">-13%</span>
+            <br />
+            <span class="precio_descuento"> Precio ahora: S/2699</span>
+          </div>
+          <button><a href="#encabesado">Añadir al carrito</a></button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 12 -->
+      <article id="articulo">
+        <div class="items">
+          <img src="imagenes/Laptop Lenovo ryzen 3.jpg" alt="" />
+          <div class="descripcion">
+            <p>
+              LAPTOP LENOVO IDEAPAD 1 AMD RYZEN 3 7320U 16GB 256GB SSD 15,6"
+            </p>
+            <span class="precio_normal">Precio anterior: S/2699</span>
+            <br />
+            <span class="porcentaje_descuento">-50%</span>
+            <br />
+            <span class="precio_descuento"> Precio ahora: S/1349</span>
+          </div>
+          <button><a href="#encabesado">Añadir al carrito</a></button>
+        </div>
+      </article>
+    </div>
+    <!-- FINAL DE CONTENIDO PRODUCTOS-->
+
+    <!-- INICIO PIE DE PAGINA -->
+    <footer class="footer" id="pie_pagina">
+      <p>
+        Creador: Fabricio Tello Vilca <br />
+        Empresa: TELLO & ELECTRONIC
+      </p>
+    </footer>
+    <!-- FINAL PIE DE PAGINA -->
+
+    <!-- CODIGO JAVASCRIPT  BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CODIGO JAVASCRIP -->
+    <script src="main.js"></script>
+  </body>
+</html>

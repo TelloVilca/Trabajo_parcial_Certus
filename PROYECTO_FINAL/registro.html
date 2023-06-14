@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ENCABESADO -->
+    <header class="header container-fluid">
+      <!-- LOGOTIPO -->
+      <div class="logo">
+        <a href="inicio_sesion.html">
+          <img src="imagenes_contenido/Logo de empresa.jpg" alt="logo" />
+        </a>
+      </div>
+
+      <!-- NAVEGACION DE LISTADO -->
+      <nav class="listado">
+        <ul>
+        </ul>
+      </nav>
+
+      <!-- NAVEGACION DE REGISTRO -->
+      <nav class="enlaces_registros">
+        <ul>
+          <li><a href="inicio_sesion.html">INICIAR SECCION</a></li>
+          <li><a href="registro.html">REGISTRATE</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="container content">
+      <div class="col-6 content_center txt_size">
+        <!-- FORMULARIO  -->
+        <form action="inicio_sesion.html" class="row g-3 pe-5 ps-5 pt-3 pb-3">
+          <!-- TITULO DEL FORMULARIO -->
+          <h2 class="text-center">Crear Cuenta</h2>
+
+          <!-- FILA NUMERO - 1 -->
+          <!-- CONTENIDO NOMBRES -->
+          <div class="col-12">
+            <label for="name" class="form-label">Nombre:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Escribe tu nombre"
+              required
+            />
+          </div>
+          <!-- FINAL FILA NUMERO - 1 -->
+
+          <!-- FILA NUMERO - 2 -->
+          <!-- CONTENIDO APELLIDOS -->
+          <div class="col-12">
+            <label for="last_name" class="form-label">Apellido:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="last_name"
+              placeholder="Escribe tu apellido"
+              required
+            />
+          </div>
+          <!-- FINAL FILA NUMERO - 2 -->
+
+          <!-- FILA NUMERO - 3 -->
+          <!-- CONTENIDO CELULAR -->
+          <div class="col-md-6">
+            <label for="cell" class="form-label">Celular:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="cell"
+              placeholder="Escribe tu celular"
+              required
+            />
+          </div>
+
+          <!-- CONTENIDO CONTRASEÑA -->
+          <div class="col-md-6">
+            <label for="password" class="form-label">Contraseña:</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Escribe tu contraseña"
+              required
+            />
+          </div>
+          <!-- FINAL FILA NUMERO - 3 -->
+
+          <!-- FILA NUMERO - 4 -->
+          <!-- CONTENIDO CORREO -->
+          <div class="col-12">
+            <label for="email" class="form-label">Correo Electronico:</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+          <!-- FINAL FILA NUMERO - 4 -->
+
+          <!-- FILA NUMERO - 5 -->
+          <!-- CONTENIDO DIRECCION -->
+          <div class="col-12">
+            <label for="adress" class="form-label">Direccion:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Escribe tu direccion"
+              required
+            />
+          </div>
+          <!-- FINAL FILA NUMERO - 5 -->
+
+          <!-- FILA NUMERO - 6 -->
+          <!-- CONTENIDO CHECKBOX -->
+          <div class="col-12">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="check"
+              required
+            />
+            <label
+              for="check"
+              class="form-check-label"
+              style="font-weight: normal; font-size: 0.9em"
+              >Acepta los terminos y condiciones nesesarios para crear una
+              cuenta.
+            </label>
+          </div>
+          <!-- FINAL FILA NUMERO - 2 -->
+
+          <!-- CONTENIDO PULSADOR DEL ENVIO -->
+          <div class="col 1 text-center">
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- CODIGO JAVASCRIPT  BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CODIGO JAVASCRIP PROPIO -->
+    <script src="main.js"></script>
+  </body>
+</html>
